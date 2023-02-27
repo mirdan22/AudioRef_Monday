@@ -15,18 +15,21 @@
   <main>
     <h2 class="hidden">Audio Tracks</h2>
     <!-- add audio element here -->
+    <audio src="audio/Albatroz.mp3"></audio>
 
     <!-- add some images to click on and play audio -->
-    <img src="images/albatroz.jpeg" alt="album art" class="track-ref">
-    <img src="images/stp.jpeg" alt="album art" class="track-ref">
-    <img src="images/wmm.jpeg" alt="album art" class="track-ref">
+    <section id="album-art">
+      <img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="album art" class="track-ref">
+      <img data-trackref="STP_ILS" src="images/stp.jpeg" alt="album art" class="track-ref">
+      <img data-trackref="Companion" src="images/wmm.jpeg" alt="album art" class="track-ref">
+    </section>
 
     <section class="audio-controls">
-      <button>PLAY</button>
-      <button>STOP</button>
-      <button>REWIND</button>
+      <button id="playButton">PLAY</button>
+      <button id="pauseButton">PAUSE</button>
+      <button id="rewindButton">REWIND</button>
 
-      <input id="volume-control" type="range" min="0" max="100" step="1"></input>
+      <input id="volumeControl" type="range" min="0" max="100" step="1"></input>
 
     </section>
   </main>
